@@ -1,0 +1,41 @@
+{
+  "name": "anicbuying",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=test node ./mp/wawa",
+    "start1": "NODE_ENV=test node ./mp/wawa1",
+    "login": "node ./mp/login.js",
+    "dev": "node ./mp/wawa",
+    "dev1": "node ./mp/wawa1",
+    "pm2:reload": "pm2 restart ecosystem.config.js --env prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AfterThreeYears/anicbuying.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AfterThreeYears/anicbuying/issues"
+  },
+  "homepage": "https://github.com/AfterThreeYears/anicbuying#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-polyfill": "^6.26.0",
+    "cheerio": "^1.0.0-rc.2",
+    "date-fns": "^2.0.0-alpha.1",
+    "gm": "^1.23.1",
+    "iconv-lite": "^0.4.19",
+    "mime": "^2.2.0",
+    "node-tesseract": "^0.2.7",
+    "qs": "^6.5.1",
+    "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+.tern-project
+.vscode
+.tern-project
+api/mock/data/db.js
+api/mock/index.js
+api/mock/config/cookie.js
+password.js
+mp/config.js
+mp/config1.js
+mp/mima.json
+mp/cookie.js
