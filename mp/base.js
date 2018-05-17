@@ -19,7 +19,7 @@ const main = ({start, end, cb, gapTime}) => {
   }, gapTime);
 };
 
-const sendRequest = ({headers, url, body, method, msg}) => {
+const sendRequest = ({headers, url, body, params, method, msg}) => {
   const time = Date.now() || format(new Date(), 'YYYY/MM/DD HH:mm:ss');
   const instance = axios.create({
     timeout: 5000,
@@ -29,7 +29,7 @@ const sendRequest = ({headers, url, body, method, msg}) => {
   if (method === 'post') {
     requestPromise = instance.post(url, body);
   } else {
-    requestPromise = instance.get(url);
+    requestPromise = instance.get(url, {params});
   }
   try {
     requestPromise
