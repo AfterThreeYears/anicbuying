@@ -6,7 +6,7 @@ const checkTime = () => {
   const m = +format(new Date(), 'mm');
   const s = +format(new Date(), 'ss');
   if (
-    (m === 59 && s >= 55) ||
+    (m === 59 && s >= 59) ||
     (m === 1 && s <= 55)  
   ) return true;
 }
